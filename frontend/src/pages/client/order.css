@@ -1,0 +1,21 @@
+.order-client{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:20px;
+    height:auto;
+}
+
+.order-item-client{
+    display: grid;
+    padding:20px 10px;
+    border-radius:10px;
+    grid-template-columns:1fr 1fr 1fr;
+    border:1px solid #5DB075;
+}
+
+.order-item-client-item--status{
+    text-align: center;
+}
+.order-item-client-item--totalprice{
+    text-align: right;
+}
