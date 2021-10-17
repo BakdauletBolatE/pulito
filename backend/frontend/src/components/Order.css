@@ -1,0 +1,9 @@
+
+.order-accordion-body-row{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.font-size22{
+    font-size:22px;
+    font-weight: 700;
+}

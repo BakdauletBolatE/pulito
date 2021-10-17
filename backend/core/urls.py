@@ -16,11 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
+from django.shortcuts import render
 from django.conf.urls.static import static
+
+
+def index (request):
+    
+    return render(request,'index.html')
+
 
 urlpatterns = [
     path('api/', include('main.urls')),
     path('admin/',admin.site.urls),
+    path('',index),
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.jwt')),
 ]

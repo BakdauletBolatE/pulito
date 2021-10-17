@@ -2,6 +2,9 @@ from pathlib import Path
 
 from datetime import timedelta
 
+
+import os
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-yk486(%st(gpd!pd_&c)hb_40zos*w&x#@b(oq-detx9mvf6lp'
@@ -39,10 +42,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'core.urls'
 
+REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend')
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [ os.path.join(REACT_APP_DIR, 'build') ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -108,6 +113,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = BASE_DIR / 'static'
+
+
+
+STATICFILES_DIRS = [
+    os.path.join(REACT_APP_DIR, 'build', 'static'),
+]
 
 MEDIA_URL = '/media/'
 

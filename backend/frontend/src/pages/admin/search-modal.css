@@ -1,0 +1,29 @@
+.search-container{
+    position: absolute;
+    top: 100%;
+    left:0;
+    width: 100%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    padding:10px;
+    background-color:white;
+    display:grid;
+    z-index: 100;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap:10px;
+    border-radius:5px;
+
+}
+.search-group{
+    display:flex;
+    padding:10px;
+    border-radius: 5px;
+    flex-direction:column;
+    background-color:#f2f2f2;
+}
+.search-group:hover{
+    background-color:silver;
+    cursor: pointer;
+}
+.search-item{
+    list-style: none;
+}
