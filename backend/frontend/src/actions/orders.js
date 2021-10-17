@@ -4,7 +4,7 @@ import {SET_ISLOADING_FALSE,SET_ISLOADING_TRUE,
        CHANGE_STATUS_DELIVERY,CREATE_ORDER_SUCCESS,CREATE_ORDER_FAIL,GET_ORDER,GET_ORDER_RATE } from './types';
 import { createMessages } from './alerts';
 
-const mainUrl = "http://127.0.0.1:8000";
+const mainUrl = "http://37.77.106.77";
 
 //GET ORDERS
 

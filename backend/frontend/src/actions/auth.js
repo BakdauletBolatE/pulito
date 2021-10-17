@@ -16,7 +16,7 @@ import axios from "axios";
 import { createErrorMessages } from "./alerts";
 
 
-const mainURl = "http://127.0.0.1:8000";
+const mainURl = "http://37.77.106.77";
 
 export const load_user = () => async dispatch => { 
     if (localStorage.getItem('access')) {

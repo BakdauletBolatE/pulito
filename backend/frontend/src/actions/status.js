@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {GET_EXPORTATION_LIST, GET_CLEAN_LIST, GET_DELIVERY_LIST, GET_DONE_LIST, SET_ROUTE} from '../actions/types.js';
 
-const mainUrl = "http://127.0.0.1:8000";
+const mainUrl = "http://37.77.106.77";
 
 
 //GET ORDERS
