@@ -11,7 +11,7 @@ SECRET_KEY = 'django-insecure-yk486(%st(gpd!pd_&c)hb_40zos*w&x#@b(oq-detx9mvf6lp
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['37.77.106.77']
+ALLOWED_HOSTS = ['37.77.106.77','127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -20,11 +20,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts',
     'djoser',
-    'main',
     'rest_framework',
     'corsheaders',
+    'core',
+    'main',
+    'accounts',
 ]
 
 
